@@ -1,9 +1,9 @@
 
 import unittest
 
-def is_palindrome(word):
-    word = word.lower().replace(" ", "")
-    return word == word[::-1]
+def is_palindrome(mystring):
+    mystring = mystring.lower().replace(" ", "") # elimina los especios en las palabras
+    return mystring == mystring[::-1] # compara la palabra con su reverso 
 
 class TestPalindrome(unittest.TestCase):
     def test_neuquen(self):
@@ -37,7 +37,7 @@ class TestPalindrome(unittest.TestCase):
     def test_ueneu (self):
         resultado = is_palindrome('ueneu ') #si es 
         self.assertEqual(resultado, True)
-        
+
 unittest.main()
 
 
