@@ -1,4 +1,3 @@
-
 import unittest
 
 def is_palindrome(mystring):
@@ -39,6 +38,3 @@ class TestPalindrome(unittest.TestCase):
         self.assertEqual(resultado, True)
 
 unittest.main()
-
-
-
